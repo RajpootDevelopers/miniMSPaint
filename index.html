@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="drawing.css" />
+    <script src="drawing.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <section class="tools-board">
+        <div class="row">
+          <div class="title">Shapes</div>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="rect.svg" alt="" />
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="circle.svg" alt="" />
+              <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="triangle.svg" alt="" />
+              <span>Triangle</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color" />
+              <label for="fill-color">Fill Color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="title">Options</div>
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="brush.svg" alt="" />
+              <span>Brush</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="eraser.svg" alt="" />
+              <span>Eraser</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5" />
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">Colors</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4A98F7" />
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button id="clear-canvas">Clear Canvas</button>
+          <button class="save-img">Save As Image</button>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; padding-top: 10px; font-size: 40px;">AFAQ RAJPOOT</h1>
+      </section>
+    </div>
+  </body>
+</html>
